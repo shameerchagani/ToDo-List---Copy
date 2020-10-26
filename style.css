@@ -1,0 +1,107 @@
+h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 500;
+    text-align: center;
+    color: gainsboro;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #07f3f3;
+/* background-image: -webkit-linear-gradient(160deg, #07f3f3 0%, #aab1b1 50%, #32cc62 100%);
+background-image: -moz-linear-gradient(160deg, #07f3f3 0%, #aab1b1 50%, #32cc62 100%);
+background-image: -o-linear-gradient(160deg, #07f3f3 0%, #aab1b1 50%, #32cc62 100%); */
+background-image: linear-gradient(to right, #07f3f3 0%, #32cc62 100%);
+}
+
+.wrapper {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 80vh;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    /* list-style: none; */
+    display: flex;
+    padding: 0.5em;
+    background: white;
+    margin-bottom: 0.5em;
+    border-radius: 0.25em;
+    box-shadow: 0em 0.20em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+span {
+    flex-grow: 1;
+}
+
+#add {
+    display: flex;
+    justify-content: space-between;
+}
+
+#task {
+    /* flex-grow: 1; */
+    min-width: 460px;
+    padding: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border: none;
+    font-size: 1em;
+    outline: none;
+
+}
+input[type=checkbox]{
+    margin-right:10px;
+    font-size: 24px;
+}
+#add>button {
+    
+    width: 80px;
+    height: 50px;
+    outline: none;
+    /* border: 1px solild white; */
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-size: 2em;
+    background-color: white;
+    color:green;
+}
+
+:checked+small+span {
+    text-decoration: line-through;
+    color: red;
+}
+
+#dt>input{
+    max-width: 180px;
+    margin: auto 5px;
+    border-radius: 0;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    outline: none;
+    
+}
+
+.fa-arrows {
+    margin: auto 10px;
+    font-size: 20px;
+    color: green;
+}
+.fa-trash-o{
+ margin: auto 20px;
+ font-size: 24px;
+ color: red;
+ font-weight: 500;
+}
+#small{
+    margin-right: 10px;
+    color: green;
+    vertical-align: middle;
+}
